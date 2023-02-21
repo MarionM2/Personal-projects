@@ -1,0 +1,19 @@
+ .container {
+     min-height: 100vh;
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     flex-direction:column;
+
+ }
+ .container form {
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 
+    inset 1px 1110px 200px -5px grey;
+}
+.display-4 {
+     font-size: 40px;
+     
+}
