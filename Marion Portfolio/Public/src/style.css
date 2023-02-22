@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+
+#hero{
+    height: 100vh;
+    font-size: 50px;
+    color: white;
+    background-image: url(./images/hill.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    font-size: center;
+    padding: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.hero-area{
+    display:flex;
+    height:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ ul{
+    display:flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;  
+ }
+ @media only screen and (max-width:1000px) {
+     ul{
+         display:flex;
+         width:500px;
+         justify-content: space-around;
+         font-size: 10px;
+     }
+ }
+
+ li {
+     text-decoration:none;
+ }
+ h1{
+     font-size: 30px;
+     margin: 0px;
+ }
+
+@media only screen and (max-width:1000px) {
+    h1{
+        font-size: 30px;
+        margin: 0px;
+    }
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem; 
+    position:relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+@media only screen and (max-width:1000px) {
+    #hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 2rem; 
+    position:relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+}
+#hero h1 span{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background-color: rgb(87, 78, 79);
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+#hero h1:nth-child(1)span{
+    animation-delay: .5 sec;
+}
+#hero h1:nth-child(2)span{
+    animation-delay: 1.5 sec;
+}
+#hero h1:nth-child(3)span{
+    animation-delay: 2.0sec;
+}
+
+@media only screen and (max-width:1000px) {
+    #hero h1 span{
+    position: absolute;
+    top:0;
+    left:0;
+    height:50%;
+    width:0;
+    background-color: rgb(128, 107, 111);
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    }
+}
+
+/*keyframes*/
+@keyframes text_reveal_box{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+         color: white;
+    }
+}
+/*End keyframes*/
+
+ p{
+     margin: 0px;
+     font-size: 30px;
+     font-weight: 300;
+ }
+
+ @media only screen and (max-width:1000px){
+     p{
+        font-size:20px;
+        font-weight: 300;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+     }
+ }
+
+.subtext{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+.hero-text{
+    margin-left:80px;
+    margin-bottom: 200px;
+}
+.button{
+    width: 200px;
+    height:60px;
+    border-radius: 30px;
+    background-color: rgb(206, 140, 102);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:1000px){
+    .button{
+    width: 100px;
+    height:30px;
+    border-radius: 15px;
+    background-color: rgb(206, 140, 102);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 150;
+    padding-top: 1.5px;
+    margin-top: 10px;
+
+    }
+}
+
+.button:hover{
+    background-color: rgb(42, 60, 63);
+}
+
+.button:active{
+    background-color: darkslateblue;
+    color: rgb(146, 46, 80);
+ }
+
+ .socials{
+     padding-bottom: 200px;
+ }
+
+ @media only screen and (max-width:1000px){
+     .socials{
+         padding-bottom: 100px;      
+     }
+ }
+ .logo{
+     height: 80px;
+     margin: 10px;
+ }
+ @media only screen and (max-width:1000px){
+     .logo{
+         height:60px;
+         margin:5px
+     }
+ }
+
+ .social{
+     margin: 40px;
+ }
+
+ @media only screen and (max-width:1000px){
+     .social{
+         margin:20px;
+     }
+ }
+
+ .sub-section{
+     display:flex;
+     justify-content: space-around;
+     padding:80px;
+     background-color: #717c6f;
+ }
+ .sub-section-alternative{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding:80px;
+    background-color: #03543f;
+}
+ h2{
+     font-size: 35px;
+     text-align: center;
+ }
+ @media only screen and (max-width:1000px) {
+     h2{
+         font-size:35;
+         text-align:center ;
+     }
+ }
+ .information{
+     background-color: #818858;
+     border-radius: 20px;
+ }
+
+.headshot{
+    width: 200px;
+    border-radius: 150px;
+    
+}
+@media only screen and (max-width:1000px){
+    .headshot{
+        width:100px;
+        border-radius: 100px;
+    }
+} 
+.headshot-container{
+    display:flex;
+    align-items: center;
+}
+
+.project-card{
+    width:300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px yellowgreen;
+    margin: 10px;
+}
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width:1000px){
+    .project-container{
+        display:flex;
+        flex-wrap:wrap;
+    }
+}
+.project-image{
+    margin-top: 25px;
+    width: 200px;
+    border-radius: 100px;
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-link{
+    text-decoration:none;
+    color:#ffc300;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(13, 33, 122);
+}
+ .table{
+     width:100%;
+     border-collapse:collapse;
+
+ }
+.table td, .table th{
+    padding:0px 1px;
+    border:1px white;
+    text-align: center;
+}
+.table th{
+    background-color:rgb(27, 18, 20) ;
+    color:white;
+}
